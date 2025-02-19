@@ -12,8 +12,20 @@ public class App {
         
         int perimetro = calculaPerimetro(ilha);
         int area = calcularArea(ilha);
+        //Impressao da Ilha
+        System.out.println("Ilha: ");
+
+        for (int i = 0; i < ilha.length; i++) {
+            for (int j = 0; j < ilha[0].length; j++) {
+                System.out.print(ilha[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
         System.out.println("Perimetro da Ilha: "+ perimetro);
         System.out.println("Area da Ilha: "+ area);
+
     }
 
     public static int calculaPerimetro(int[][] ilha){
@@ -56,4 +68,5 @@ public class App {
         }
         return area;
     }
+    
 }
